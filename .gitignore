@@ -1,0 +1,13 @@
+dist
+build
+src
+venv
+*.pyc
+*.pyo
+*.egg
+*.exe
+*.log
+__pycache__
+old_project
+*.swp
+*.spec
