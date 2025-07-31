@@ -58,7 +58,8 @@ class MainWindow(QMainWindow):
         self.combo_scale.addItems(["5", "6", "7", "8", "9", "10"])
         label_dpi = QLabel("DPI:")
         self.combo_dpi = QComboBox()
-        self.combo_dpi.addItems(["72", "96", "150", "300"])
+        self.combo_dpi.addItems(["72", "96", "150", "300", "400", "500"])
+        self.combo_dpi.setCurrentText("150")  # Đặt mặc định là 150 DPI
         grid_row1.addWidget(label_scale, 0, 0)
         grid_row1.addWidget(self.combo_scale, 0, 1)
         grid_row1.addWidget(label_dpi, 0, 2)

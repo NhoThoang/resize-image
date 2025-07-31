@@ -1,0 +1,23 @@
+HƯỚNG DẪN SỬ DỤNG PHẦN MỀM CROP & RESIZE IMAGE
+============================================
+
+1. DPI là gì?
+-------------
+- DPI (Dots Per Inch) là thông số xác định độ phân giải in của ảnh. DPI càng cao thì ảnh in ra càng sắc nét, chi tiết hơn.
+
+2. Resample Method là gì?
+-------------------------
+- Resample method là phương pháp nội suy khi thay đổi kích thước ảnh. Mỗi phương pháp cho kết quả khác nhau về độ mịn, sắc nét, tốc độ xử lý:
+    * Nearest: lấy điểm ảnh gần nhất, xử lý nhanh nhưng có thể bị răng cưa.
+    * Box: lấy trung bình các điểm ảnh trong vùng, cho ảnh mịn hơn Nearest.
+    * Bilinear: nội suy tuyến tính, ảnh mịn hơn Box.
+    * Bicubic: nội suy bậc ba, ảnh mịn và sắc nét, thường dùng khi phóng to/thu nhỏ.
+    * Lanczos: dùng bộ lọc Lanczos, chất lượng cao nhất khi phóng to/thu nhỏ, xử lý chậm hơn.
+
+3. Hướng dẫn sử dụng phần mềm
+-----------------------------
+- Chọn hệ số phóng to (Scale), DPI, phương pháp resample, mức noise, và có tách nền hay không.
+- Nhấn nút "Chạy xử lý folder ảnh", chọn thư mục chứa ảnh cần xử lý.
+- Phần mềm sẽ tự động crop, resize, tách nền (nếu chọn), và lưu ảnh kết quả vào thư mục output_resize.
+
+Nếu cần giải thích chi tiết về từng phương pháp hoặc DPI, hãy liên hệ tác giả hoặc xem thêm tài liệu kèm theo.
